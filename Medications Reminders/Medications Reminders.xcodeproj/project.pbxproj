@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		956E3DEB27F7754300B0E2CD /* EditMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E3DEA27F7754300B0E2CD /* EditMedicationView.swift */; };
+		956E3DED27F9B74E00B0E2CD /* ReminderCardComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E3DEC27F9B74D00B0E2CD /* ReminderCardComponentView.swift */; };
+		956E3DEF27F9C0AE00B0E2CD /* ReminderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E3DEE27F9C0AE00B0E2CD /* ReminderModel.swift */; };
+		956E3DF127F9E96700B0E2CD /* RemindersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E3DF027F9E96600B0E2CD /* RemindersService.swift */; };
+		956E3DF327F9E97B00B0E2CD /* RemindersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956E3DF227F9E97B00B0E2CD /* RemindersViewModel.swift */; };
+		95AB262A27F6EEF000FDF04D /* Medications_RemindersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB262927F6EEF000FDF04D /* Medications_RemindersApp.swift */; };
+		95AB262C27F6EEF000FDF04D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB262B27F6EEF000FDF04D /* ContentView.swift */; };
+		95AB262E27F6EEF200FDF04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95AB262D27F6EEF200FDF04D /* Assets.xcassets */; };
+		95AB263127F6EEF200FDF04D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95AB263027F6EEF200FDF04D /* Preview Assets.xcassets */; };
+		95AB263827F6F4B700FDF04D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95AB263727F6F4B600FDF04D /* GoogleService-Info.plist */; };
+		95AB263B27F6F52100FDF04D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 95AB263A27F6F52100FDF04D /* FirebaseAuth */; };
+		95AB263D27F6F52100FDF04D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 95AB263C27F6F52100FDF04D /* FirebaseFirestore */; };
+		95AB263F27F6F52100FDF04D /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 95AB263E27F6F52100FDF04D /* FirebaseFirestoreSwift-Beta */; };
+		95AB264127F6F52100FDF04D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 95AB264027F6F52100FDF04D /* FirebaseStorage */; };
+		95AB264627F6F7AF00FDF04D /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB264527F6F7AF00FDF04D /* TodayView.swift */; };
+		95AB264827F6F7BC00FDF04D /* MedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB264727F6F7BC00FDF04D /* MedicationsView.swift */; };
+		95AB264A27F6F7C500FDF04D /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB264927F6F7C500FDF04D /* MoreView.swift */; };
+		95AB264C27F6F7D000FDF04D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB264B27F6F7D000FDF04D /* ProfileView.swift */; };
+		95AB264E27F6F7E800FDF04D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB264D27F6F7E800FDF04D /* SignUpView.swift */; };
+		95AB265027F6F7F300FDF04D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB264F27F6F7F300FDF04D /* LoginView.swift */; };
+		95AB265527F6F89200FDF04D /* PrimaryButtonComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB265427F6F89200FDF04D /* PrimaryButtonComponentView.swift */; };
+		95AB265827F6F8DA00FDF04D /* PreviewLayoutComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB265727F6F8DA00FDF04D /* PreviewLayoutComponentModifier.swift */; };
+		95AB265A27F6F92F00FDF04D /* SecondaryButtonComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB265927F6F92F00FDF04D /* SecondaryButtonComponentView.swift */; };
+		95AB265C27F6FA7B00FDF04D /* InputTextfieldComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB265B27F6FA7B00FDF04D /* InputTextfieldComponentView.swift */; };
+		95AB265E27F6FA8E00FDF04D /* InputPasswordComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB265D27F6FA8E00FDF04D /* InputPasswordComponentView.swift */; };
+		95AB266027F6FB9600FDF04D /* LabelledDividerComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB265F27F6FB9600FDF04D /* LabelledDividerComponentView.swift */; };
+		95AB266227F700F000FDF04D /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB266127F700F000FDF04D /* ResetPasswordView.swift */; };
+		95AB266427F7020E00FDF04D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB266327F7020D00FDF04D /* AuthViewModel.swift */; };
+		95AB266627F704A700FDF04D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB266527F704A700FDF04D /* UserModel.swift */; };
+		95AB266927F71D0A00FDF04D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB266827F71D0A00FDF04D /* UserService.swift */; };
+		95AB266B27F736C900FDF04D /* MedicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB266A27F736C900FDF04D /* MedicationService.swift */; };
+		95AB266D27F7374700FDF04D /* MedicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB266C27F7374700FDF04D /* MedicationModel.swift */; };
+		95AB266F27F7386100FDF04D /* MedicationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB266E27F7386100FDF04D /* MedicationsViewModel.swift */; };
+		95AB267127F752F900FDF04D /* HeaderComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB267027F752F800FDF04D /* HeaderComponentView.swift */; };
+		95AB267327F75D0800FDF04D /* WeeklyCalendarComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB267227F75D0800FDF04D /* WeeklyCalendarComponentView.swift */; };
+		95AB267527F75D3D00FDF04D /* WeeklyCalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AB267427F75D3D00FDF04D /* WeeklyCalendarViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		956E3DEA27F7754300B0E2CD /* EditMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMedicationView.swift; sourceTree = "<group>"; };
+		956E3DEC27F9B74D00B0E2CD /* ReminderCardComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCardComponentView.swift; sourceTree = "<group>"; };
+		956E3DEE27F9C0AE00B0E2CD /* ReminderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderModel.swift; sourceTree = "<group>"; };
+		956E3DF027F9E96600B0E2CD /* RemindersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersService.swift; sourceTree = "<group>"; };
+		956E3DF227F9E97B00B0E2CD /* RemindersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewModel.swift; sourceTree = "<group>"; };
+		95AB262627F6EEF000FDF04D /* Medications Reminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medications Reminders.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95AB262927F6EEF000FDF04D /* Medications_RemindersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medications_RemindersApp.swift; sourceTree = "<group>"; };
+		95AB262B27F6EEF000FDF04D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		95AB262D27F6EEF200FDF04D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95AB263027F6EEF200FDF04D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95AB263727F6F4B600FDF04D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95AB264527F6F7AF00FDF04D /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		95AB264727F6F7BC00FDF04D /* MedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsView.swift; sourceTree = "<group>"; };
+		95AB264927F6F7C500FDF04D /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		95AB264B27F6F7D000FDF04D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		95AB264D27F6F7E800FDF04D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		95AB264F27F6F7F300FDF04D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		95AB265427F6F89200FDF04D /* PrimaryButtonComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonComponentView.swift; sourceTree = "<group>"; };
+		95AB265727F6F8DA00FDF04D /* PreviewLayoutComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewLayoutComponentModifier.swift; sourceTree = "<group>"; };
+		95AB265927F6F92F00FDF04D /* SecondaryButtonComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonComponentView.swift; sourceTree = "<group>"; };
+		95AB265B27F6FA7B00FDF04D /* InputTextfieldComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextfieldComponentView.swift; sourceTree = "<group>"; };
+		95AB265D27F6FA8E00FDF04D /* InputPasswordComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPasswordComponentView.swift; sourceTree = "<group>"; };
+		95AB265F27F6FB9600FDF04D /* LabelledDividerComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledDividerComponentView.swift; sourceTree = "<group>"; };
+		95AB266127F700F000FDF04D /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		95AB266327F7020D00FDF04D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		95AB266527F704A700FDF04D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		95AB266827F71D0A00FDF04D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		95AB266A27F736C900FDF04D /* MedicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationService.swift; sourceTree = "<group>"; };
+		95AB266C27F7374700FDF04D /* MedicationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationModel.swift; sourceTree = "<group>"; };
+		95AB266E27F7386100FDF04D /* MedicationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsViewModel.swift; sourceTree = "<group>"; };
+		95AB267027F752F800FDF04D /* HeaderComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponentView.swift; sourceTree = "<group>"; };
+		95AB267227F75D0800FDF04D /* WeeklyCalendarComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendarComponentView.swift; sourceTree = "<group>"; };
+		95AB267427F75D3D00FDF04D /* WeeklyCalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendarViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95AB262327F6EEF000FDF04D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95AB263F27F6F52100FDF04D /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				95AB264127F6F52100FDF04D /* FirebaseStorage in Frameworks */,
+				95AB263B27F6F52100FDF04D /* FirebaseAuth in Frameworks */,
+				95AB263D27F6F52100FDF04D /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95AB261D27F6EEF000FDF04D = {
+			isa = PBXGroup;
+			children = (
+				95AB262827F6EEF000FDF04D /* Medications Reminders */,
+				95AB262727F6EEF000FDF04D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95AB262727F6EEF000FDF04D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95AB262627F6EEF000FDF04D /* Medications Reminders.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95AB262827F6EEF000FDF04D /* Medications Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				95AB266727F71C5200FDF04D /* Services */,
+				95AB265627F6F8C000FDF04D /* Modifiers */,
+				95AB265327F6F85600FDF04D /* Components */,
+				95AB264427F6F75700FDF04D /* Models */,
+				95AB264327F6F74900FDF04D /* ViewModels */,
+				95AB264227F6F73500FDF04D /* Views */,
+				95AB262927F6EEF000FDF04D /* Medications_RemindersApp.swift */,
+				95AB262B27F6EEF000FDF04D /* ContentView.swift */,
+				95AB262D27F6EEF200FDF04D /* Assets.xcassets */,
+				95AB263727F6F4B600FDF04D /* GoogleService-Info.plist */,
+				95AB262F27F6EEF200FDF04D /* Preview Content */,
+			);
+			path = "Medications Reminders";
+			sourceTree = "<group>";
+		};
+		95AB262F27F6EEF200FDF04D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				95AB263027F6EEF200FDF04D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95AB264227F6F73500FDF04D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95AB264527F6F7AF00FDF04D /* TodayView.swift */,
+				95AB264727F6F7BC00FDF04D /* MedicationsView.swift */,
+				95AB264927F6F7C500FDF04D /* MoreView.swift */,
+				95AB264B27F6F7D000FDF04D /* ProfileView.swift */,
+				95AB264D27F6F7E800FDF04D /* SignUpView.swift */,
+				95AB264F27F6F7F300FDF04D /* LoginView.swift */,
+				95AB266127F700F000FDF04D /* ResetPasswordView.swift */,
+				956E3DEA27F7754300B0E2CD /* EditMedicationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95AB264327F6F74900FDF04D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				95AB266327F7020D00FDF04D /* AuthViewModel.swift */,
+				95AB266E27F7386100FDF04D /* MedicationsViewModel.swift */,
+				95AB267427F75D3D00FDF04D /* WeeklyCalendarViewModel.swift */,
+				956E3DF227F9E97B00B0E2CD /* RemindersViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		95AB264427F6F75700FDF04D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95AB266527F704A700FDF04D /* UserModel.swift */,
+				95AB266C27F7374700FDF04D /* MedicationModel.swift */,
+				956E3DEE27F9C0AE00B0E2CD /* ReminderModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95AB265327F6F85600FDF04D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				95AB265427F6F89200FDF04D /* PrimaryButtonComponentView.swift */,
+				95AB265927F6F92F00FDF04D /* SecondaryButtonComponentView.swift */,
+				95AB265B27F6FA7B00FDF04D /* InputTextfieldComponentView.swift */,
+				95AB265D27F6FA8E00FDF04D /* InputPasswordComponentView.swift */,
+				95AB265F27F6FB9600FDF04D /* LabelledDividerComponentView.swift */,
+				95AB267027F752F800FDF04D /* HeaderComponentView.swift */,
+				95AB267227F75D0800FDF04D /* WeeklyCalendarComponentView.swift */,
+				956E3DEC27F9B74D00B0E2CD /* ReminderCardComponentView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		95AB265627F6F8C000FDF04D /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				95AB265727F6F8DA00FDF04D /* PreviewLayoutComponentModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		95AB266727F71C5200FDF04D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				95AB266827F71D0A00FDF04D /* UserService.swift */,
+				95AB266A27F736C900FDF04D /* MedicationService.swift */,
+				956E3DF027F9E96600B0E2CD /* RemindersService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95AB262527F6EEF000FDF04D /* Medications Reminders */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95AB263427F6EEF200FDF04D /* Build configuration list for PBXNativeTarget "Medications Reminders" */;
+			buildPhases = (
+				95AB262227F6EEF000FDF04D /* Sources */,
+				95AB262327F6EEF000FDF04D /* Frameworks */,
+				95AB262427F6EEF000FDF04D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Medications Reminders";
+			packageProductDependencies = (
+				95AB263A27F6F52100FDF04D /* FirebaseAuth */,
+				95AB263C27F6F52100FDF04D /* FirebaseFirestore */,
+				95AB263E27F6F52100FDF04D /* FirebaseFirestoreSwift-Beta */,
+				95AB264027F6F52100FDF04D /* FirebaseStorage */,
+			);
+			productName = "Medications Reminders";
+			productReference = 95AB262627F6EEF000FDF04D /* Medications Reminders.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95AB261E27F6EEF000FDF04D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					95AB262527F6EEF000FDF04D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 95AB262127F6EEF000FDF04D /* Build configuration list for PBXProject "Medications Reminders" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95AB261D27F6EEF000FDF04D;
+			packageReferences = (
+				95AB263927F6F52100FDF04D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 95AB262727F6EEF000FDF04D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95AB262527F6EEF000FDF04D /* Medications Reminders */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95AB262427F6EEF000FDF04D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95AB263127F6EEF200FDF04D /* Preview Assets.xcassets in Resources */,
+				95AB262E27F6EEF200FDF04D /* Assets.xcassets in Resources */,
+				95AB263827F6F4B700FDF04D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95AB262227F6EEF000FDF04D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95AB266B27F736C900FDF04D /* MedicationService.swift in Sources */,
+				95AB266027F6FB9600FDF04D /* LabelledDividerComponentView.swift in Sources */,
+				95AB262C27F6EEF000FDF04D /* ContentView.swift in Sources */,
+				95AB266927F71D0A00FDF04D /* UserService.swift in Sources */,
+				95AB267327F75D0800FDF04D /* WeeklyCalendarComponentView.swift in Sources */,
+				95AB265C27F6FA7B00FDF04D /* InputTextfieldComponentView.swift in Sources */,
+				95AB266D27F7374700FDF04D /* MedicationModel.swift in Sources */,
+				95AB264627F6F7AF00FDF04D /* TodayView.swift in Sources */,
+				95AB265527F6F89200FDF04D /* PrimaryButtonComponentView.swift in Sources */,
+				95AB265E27F6FA8E00FDF04D /* InputPasswordComponentView.swift in Sources */,
+				95AB266F27F7386100FDF04D /* MedicationsViewModel.swift in Sources */,
+				95AB265A27F6F92F00FDF04D /* SecondaryButtonComponentView.swift in Sources */,
+				95AB262A27F6EEF000FDF04D /* Medications_RemindersApp.swift in Sources */,
+				95AB266627F704A700FDF04D /* UserModel.swift in Sources */,
+				956E3DF327F9E97B00B0E2CD /* RemindersViewModel.swift in Sources */,
+				95AB267127F752F900FDF04D /* HeaderComponentView.swift in Sources */,
+				95AB264E27F6F7E800FDF04D /* SignUpView.swift in Sources */,
+				95AB264827F6F7BC00FDF04D /* MedicationsView.swift in Sources */,
+				95AB264C27F6F7D000FDF04D /* ProfileView.swift in Sources */,
+				95AB265027F6F7F300FDF04D /* LoginView.swift in Sources */,
+				95AB266427F7020E00FDF04D /* AuthViewModel.swift in Sources */,
+				95AB266227F700F000FDF04D /* ResetPasswordView.swift in Sources */,
+				95AB265827F6F8DA00FDF04D /* PreviewLayoutComponentModifier.swift in Sources */,
+				956E3DEB27F7754300B0E2CD /* EditMedicationView.swift in Sources */,
+				95AB264A27F6F7C500FDF04D /* MoreView.swift in Sources */,
+				956E3DED27F9B74E00B0E2CD /* ReminderCardComponentView.swift in Sources */,
+				95AB267527F75D3D00FDF04D /* WeeklyCalendarViewModel.swift in Sources */,
+				956E3DEF27F9C0AE00B0E2CD /* ReminderModel.swift in Sources */,
+				956E3DF127F9E96700B0E2CD /* RemindersService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95AB263227F6EEF200FDF04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95AB263327F6EEF200FDF04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95AB263527F6EEF200FDF04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Medications Reminders/Preview Content\"";
+				DEVELOPMENT_TEAM = FGP23W5WJ7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "up896522.Medications-Reminders";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95AB263627F6EEF200FDF04D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Medications Reminders/Preview Content\"";
+				DEVELOPMENT_TEAM = FGP23W5WJ7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "up896522.Medications-Reminders";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95AB262127F6EEF000FDF04D /* Build configuration list for PBXProject "Medications Reminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95AB263227F6EEF200FDF04D /* Debug */,
+				95AB263327F6EEF200FDF04D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95AB263427F6EEF200FDF04D /* Build configuration list for PBXNativeTarget "Medications Reminders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95AB263527F6EEF200FDF04D /* Debug */,
+				95AB263627F6EEF200FDF04D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95AB263927F6F52100FDF04D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95AB263A27F6F52100FDF04D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95AB263927F6F52100FDF04D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		95AB263C27F6F52100FDF04D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95AB263927F6F52100FDF04D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		95AB263E27F6F52100FDF04D /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95AB263927F6F52100FDF04D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		95AB264027F6F52100FDF04D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95AB263927F6F52100FDF04D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 95AB261E27F6EEF000FDF04D /* Project object */;
+}
